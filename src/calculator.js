@@ -1,26 +1,41 @@
+
 class Years {
-  constructor (userAge) {
-    this.userAge = userAge
+  constructor (userAge, mercuryYears, venusYears, marsYears, jupiterYears) {
+    this.userAge = userAge,
     // this.mercuryYears =  mercuryYears,
     // this.venusYears =  venusYears,
     // this.marsYears = marsYears,
     // this.jupiterYears = jupiterYears
+    this.mercuryYears = mercuryYears,
+    this.venusYears = venusYears,
+    this.marsYears =  marsYears,
+    this.jupiterYears = jupiterYears
   }
   mercuryCount() {
-  let mercuryYears = (userAge * .24);
-  return mercuryYears
+  this.mercuryYears = (this.userAge * .24);
+
   }
   venusCount() {
-  let mercuryYears = (userAge* .24);
+  let venusYears = (this.userAge* .24);
   return mercuryYears
 }
   marsCount() {
-  let marsYears = (userAge * 1.88);
+  let marsYears = (this.userAge * 1.88);
   return marsYears
 }
   jupiterCount() {
-  let jupiterYears = (userAge* 11.86);
+  let jupiterYears = (this.userAge* 11.86);
   return jupiterYears
   }
 
 };
+$(document).ready(function(){
+  $("#calculateYearsForm").submit(function(event){
+    event.preventDefault()
+    const userAge = $("#solar").val();
+    let userYears = new Years (userAge)
+    userYears.mercuryCount()
+    $(".mercury").html(userYears.mercuryYears);
+
+  })
+})

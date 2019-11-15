@@ -1,5 +1,5 @@
-
-class Years {
+import $ from 'jquery';
+export class Years {
   constructor (userAge, mercuryYears, venusYears, marsYears, jupiterYears) {
     this.userAge = userAge,
     // this.mercuryYears =  mercuryYears,
@@ -13,29 +13,15 @@ class Years {
   }
   mercuryCount() {
   this.mercuryYears = (this.userAge * .24);
-
   }
   venusCount() {
-  let venusYears = (this.userAge* .24);
-  return mercuryYears
-}
+  this.venusYears = (this.userAge * .24);
+  }
   marsCount() {
-  let marsYears = (this.userAge * 1.88);
-  return marsYears
-}
+  this.marsYears = (this.userAge * 1.88);
+  }
   jupiterCount() {
-  let jupiterYears = (this.userAge* 11.86);
-  return jupiterYears
+  this.jupiterYears = (this.userAge * 11.86);
   }
 
 };
-$(document).ready(function(){
-  $("#calculateYearsForm").submit(function(event){
-    event.preventDefault()
-    const userAge = $("#solar").val();
-    let userYears = new Years (userAge)
-    userYears.mercuryCount()
-    $(".mercury").html(userYears.mercuryYears);
-
-  })
-})

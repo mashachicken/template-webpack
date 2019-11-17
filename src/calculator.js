@@ -21,10 +21,10 @@ export class Years {
   }
   yearsLeft() {
     let yearsLeftArray = [];
-    yearsLeftArray.push((this.lifeExpectancy * .24) - this.mercuryYears)
-    yearsLeftArray.push((this.lifeExpectancy * .62) - this.venusYears)
-    yearsLeftArray.push((this.lifeExpectancy * 1.88) - this.marsYears)
-    yearsLeftArray.push((this.lifeExpectancy * 11.86) - this.jupiterYears)
+    yearsLeftArray.push(this.lifeExpectancy - this.mercuryYears)
+    yearsLeftArray.push(this.lifeExpectancy - this.venusYears)
+    yearsLeftArray.push(this.lifeExpectancy - this.marsYears)
+    yearsLeftArray.push(this.lifeExpectancy - this.jupiterYears)
     return yearsLeftArray
   }
 };

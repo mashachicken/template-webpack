@@ -12,5 +12,5 @@ describe('Years', () => {
   });
   let testAge = new Years(20);
   testAge.marsCount()
-  expect(testAge.marsYears).toEqual(17.599999999999994);
+  expect(testAge.marsYears).toEqual(37.599999999999994);
 });

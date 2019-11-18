@@ -5,6 +5,7 @@ describe('Years', () => {
     testAge.mercuryCount()
     expect(testAge.mercuryYears).toEqual(7.199999999999999);
   });
+  let testAge = new Years(30);
   testAge.venusCount()
   expect(testAge.venusYears).toEqual(18.6);
 });

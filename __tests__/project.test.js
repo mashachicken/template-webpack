@@ -1,4 +1,4 @@
-import { Years } from './../src/calculator.js';
+import { Years} from './../src/calculator.js';
 describe('Years', () => {
   test('Should correctly calculate user`s age in mercury years', () => {
     let testAge = new Years(30);
@@ -19,5 +19,17 @@ describe('Years', () => {
     let testAge = new Years(20);
     testAge.jupiterCount()
     expect(testAge.jupiterYears).toEqual(237.2);
+  });
+  test('Should correctly calculate user`s age in jupiter years', () => {
+    let testAge = new Years(20);
+    testAge.jupiterCount()
+    expect(testAge.jupiterYears).toEqual(237.2);
+  });
+});
+//i don't know how to test this spec
+describe('Years', () => {
+  test ('Determines how many solar years one has left to live on a planet', () => {
+    let testAge = new Years(20, 90);
+    expect(testAge.yearsLeft()).toEqual(6);
   });
 });

@@ -33,7 +33,7 @@ describe('Years', () => {
     expect(testAge.yearsLeft()).toEqual([85.2, 77.6, 52.400000000000006, -147.2]);
   });
   test('Should test my UI logic I eplimented in main.js works (multyplying years by 1 to make it a positive number instead of a negative', () => {
-    let testAge = new Years(12, 85, 2.88, 7.4399999999999995, 22.56, 142.32;
+    let testAge = new Years(12, 85, 2.88, 7.4399999999999995, 22.56, 142.32);
     let yearsPast = () => {testAge.yearsLeft().forEach(function(year){
       return year * 1
       expect(yearPast().toEqual([82.12, 77.56, 62.44, 57.31999999999999]))

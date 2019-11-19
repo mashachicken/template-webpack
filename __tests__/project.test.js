@@ -29,5 +29,8 @@ describe('Years', () => {
 //i don't know how to test this spec
 describe('Years', () => {
   test ('Determines how many solar years one has left to live on a planet', () => {
-  
+    let testAge = new Years(20, 90, 4.8, 12.4, 37.599999999999994, 237.2);
+
+    expect(testAge.yearsLeft()).toEqual(6);
+  });
 });

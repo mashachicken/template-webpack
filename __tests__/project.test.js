@@ -39,6 +39,5 @@ describe('Years', () => {
       expect(yearPast().toEqual([82.12, 77.56, 62.44, 57.31999999999999]))
     })
   }
-  
 });
 });

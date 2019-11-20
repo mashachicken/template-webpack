@@ -1,11 +1,7 @@
 export class Years {
-  constructor (userAge, lifeExpectancy, mercuryYears, venusYears, marsYears, jupiterYears) {
+  constructor (userAge, lifeExpectancy) {
     this.userAge = userAge,
-    this.lifeExpectancy = lifeExpectancy,
-    this.mercuryYears = mercuryYears,
-    this.venusYears = venusYears,
-    this.marsYears = marsYears,
-    this.jupiterYears = jupiterYears
+    this.lifeExpectancy = lifeExpectancy
   }
   mercuryCount() {
     this.mercuryYears = (this.userAge * .24);

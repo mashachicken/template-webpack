@@ -12,16 +12,13 @@ $(document).ready(function(){
     userYears.marsCount()
     userYears.jupiterCount()
     // userYears.yearsPast()
-
     userYears.yearsLeft().forEach(function(year){
     if (year >= 0) {
       $("#yearsleft").append("<li>" + year + "</li>")
     } else {
       $("#yearspast").append("<li>" + year * (-1) + "</li>")
-      console.log("u dead")
     };
   })
-
     $(".mercury").html(userYears.mercuryYears);
     $(".venus").html(userYears.venusYears);
     $(".mars").html(userYears.marsYears);

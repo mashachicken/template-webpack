@@ -28,12 +28,19 @@ describe('Years', () => {
 });
 describe('Years', () => {
   test ('Determines if the program correctly counts how many solar years a user has left to live on each planet and pushes it to an array', () => {
-    let testAge = new Years(20, 90, 4.8, 12.4, 37.599999999999994, 237.2);
-
+    let testAge = new Years(20, 90);
+    testAge.mercuryCount()
+    testAge.venusCount()
+    testAge.marsCount()
+    testAge.jupiterCount()
     expect(testAge.yearsLeft()).toEqual([85.2, 77.6, 52.400000000000006, -147.2]);
   });
   test('Should test my UI logic I eplimented in main.js works (multyplying years by 1 to make it a positive number instead of a negative', () => {
-    let testAge = new Years(12, 85, 2.88, 7.4399999999999995, 22.56, 142.32);
+    let testAge = new Years(12, 85);
+      testAge.mercuryCount()
+      testAge.venusCount()
+      testAge.marsCount()
+      testAge.jupiterCount()
     let yearsPast = () => {testAge.yearsLeft().forEach(function(year){
       return year * 1
       expect(yearPast().toEqual([82.12, 77.56, 62.44, 57.31999999999999]))

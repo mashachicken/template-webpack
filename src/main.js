@@ -16,7 +16,7 @@ $(document).ready(function(){
     if (year >= 0) {
       $("#yearsleft").append("<li>" + year + "</li>")
     } else {
-      $("#yearspast").append("<li>" + year * (-1) + "</li>")
+      $("#yearspast").append("<li>" + year * (-1) + " years pass the expectancy" + "</li>")
     };
   })
     $(".mercury").html(userYears.mercuryYears);

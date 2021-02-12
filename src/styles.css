@@ -1,0 +1,15 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  color: grey;
+  font-family: 'Poppins', sans-serif;
+}
+
+ P {
+   border-style: solid;
+   border-color: black;
+ }
